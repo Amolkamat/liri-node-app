@@ -7,3 +7,11 @@ exports.twitterKeys = {
   access_token_secret: 'AMoOSg14hegKd2kewiIedVO6KzcBEa5Ypig3MHbdDySV9',
 }
 
+exports.spotifyKeys = {
+client_id: <bed15c5f66d34f7fbb251da18e4b1d6b>,
+client_secret: <f0df33be8e414923b52dfd0634801e2b>
+};
+
+exports.omdbKeys = {
+  apikey:'40e9cece'
+}
