@@ -1,0 +1,32 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "A cool app to get started with Node and NPM",
+  "main": "liri.js",
+  "scripts": {
+    "test": "node liri.js my-tweets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amolkamat/liri-node-app"
+  },
+  "keywords": [
+    "node",
+    "tweets",
+    "liri",
+    "bot",
+    "coolApp"
+  ],
+  "author": "Amol Kamatmhamai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amolkamat/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Amolkamat/liri-node-app#readme",
+  "dependencies": {
+    "line-reader": "^0.4.0",
+    "node-spotify-api": "^1.0.5",
+    "request": "^2.81.0",
+    "twitter": "^1.7.0"
+  }
+}

@@ -1,23 +1,19 @@
-var Twitter = require('twitter');
+//Import the required dependencies
 var keys = require("./keys");
+var Twitter = require("twitter");
+var Spotify = require("node-spotify-api");
+var request = require("request");
+var lineReader = require("line-reader");
+var fs = require("fs");
 
+//Get Twitter Keys
 var client = new Twitter({
-  consumer_key: keys.twitterKeys.consumer_key,
-  consumer_secret: keys.twitterKeys.consumer_secret,
-  access_token_key: keys.twitterKeys.access_token_key,
-  access_token_secret: keys.twitterKeys.access_token_secret,
+    consumer_key: keys.twitterKeys.consumer_key,
+    consumer_secret: keys.twitterKeys.consumer_secret,
+    access_token_key: keys.twitterKeys.access_token_key,
+    access_token_secret: keys.twitterKeys.access_token_secret
 });
-client.get('search/tweets', {
-	q: 'Stoned_ATM',
-	count:10
-}	, function(error, tweets, response) {
-  if (!error) {
-    tweets.statuses.forEach(function(tweet, index) {
-            console.log((index + 1) + ") " + tweet.text);
-       
-        })
-  }
-});
+
 //Get Spotify Keys
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify({
@@ -62,7 +58,7 @@ function spotifySong(trackName) {
 //Function to get Tweets using Twitter Module
 function fetchTweets() {
     client.get('search/tweets', {
-        q: 'NodePianoMan',
+        q: 'Stoned_ATM',
         count: 20
     }, function(error, tweets, response) {
 

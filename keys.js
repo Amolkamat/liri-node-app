@@ -8,8 +8,8 @@ exports.twitterKeys = {
 }
 
 exports.spotifyKeys = {
-client_id: <bed15c5f66d34f7fbb251da18e4b1d6b>,
-client_secret: <f0df33be8e414923b52dfd0634801e2b>
+client_id: 'bed15c5f66d34f7fbb251da18e4b1d6b',
+client_secret: 'f0df33be8e414923b52dfd0634801e2b'
 };
 
 exports.omdbKeys = {
